@@ -34,5 +34,5 @@ window.onload = () => {
       });
     });
 
-    location.replace("http://localhost:8000/imsM72");
+    location.replace("http://localhost:8080/imsM72");
 }
