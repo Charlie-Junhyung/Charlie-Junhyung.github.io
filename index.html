@@ -2,29 +2,24 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8">
-  <title> HELLO PWA  </title>
+  <title> HELLO PWA </title>
   <link rel="manifest" crossorigin="use-credentials" href="./manifest.json">
   
   <link rel="icon" type="image/png" sizes="192x192"  href="ico/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png"> 
   <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="ico/favicon-96x96.png">
-  <link rel="manifest" href="/manifest.json">
+  
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <style>
-   .hidden {
-       display: none !important;
-   }
-  </style>
 </head>
 <body>
   <h1>HELLO PWA</h1>
   
-   <div id="installContainer" class="hidden" >
-      <button id="butInstall" type="button">
+   <div id="installContainer">
+      <button id="buttonInstall" type="button">
         앱으로 설치
       </button>
     </div>
@@ -32,42 +27,5 @@
 </body>
 
  <script src="js/main.js"></script>
- <script>
-   
-window.addEventListener('beforeinstallprompt', (event) => {
-  console.info('👍', 'beforeinstallprompt', event);
-  // 나중에 이벤트를 활성화하려고 보관한다.
-  window.deferredPrompt = event;
-  // 설치 버튼에 담긴 hidden 클래스를 제거한다. 
-  divInstall.classList.toggle('hidden', false);
-});
 
-butInstall.addEventListener('click', async () => {
-  console.info('👍', 'butInstall-clicked');
-  const promptEvent = window.deferredPrompt;
-  if (!promptEvent) {
-    // The deferred prompt isn't available.
-    return;
-  }
-  // 설치 prompt 호출!
-  promptEvent.prompt();
-  // 결과물 로깅 및 사용자 선택 저장
-  const result = await promptEvent.userChoice;
-  console.info('👍', 'userChoice', result);
-
-  // 이벤트 초기화. prompt()는 한번만 호출할 수 있다.
-  window.deferredPrompt = null;
-  
-  // 설치 버튼 다시 숨기기
-  divInstall.classList.toggle('hidden', true);
-
-});
-
-window.addEventListener('appinstalled', (event) => {
-  console.info('👍', 'appinstalled', event);
-  
-  // 이벤트 초기화 (리소스 가비지 처리) 
-  window.deferredPrompt = null;
-});
-  </script>
 </html>
