@@ -1,3 +1,4 @@
+/*
 window.onload = () => {
     'use strict';
   
@@ -35,4 +36,5 @@ window.onload = () => {
     });
 
     location.replace("http://172.17.2.21:8080/imsM72");
-}
+}*/
+
