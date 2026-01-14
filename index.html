@@ -2,7 +2,10 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8">
-  <title> Resume </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> 이준형 | Resume </title>
+  <meta name="description" content="이준형 - Java/Spring 백엔드 & Android 개발자 이력서" />
+  
   <link rel="manifest" crossorigin="use-credentials" href="./manifest.json">
   
   <link rel="icon" type="image/png" sizes="192x192"  href="ico/android-icon-192x192.png">
@@ -16,17 +19,105 @@
   
 </head>
 <body>
-  <h1>察理 李俊衡</h1>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>이준형</h1>
+        <div class="role">Java/Spring 백엔드 · Android 개발</div>
+        <div class="meta">Email: june900s@gmail.com · Phone: 010-2694-0249</div>
+      </div>
+      <div class="links">
+        <!-- 본인 링크로 교체 -->
+        <a href="https://github.com/USERNAME" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://USERNAME.github.io" target="_blank" rel="noreferrer">Resume</a>
+        <a href="https://www.notion.so/..." target="_blank" rel="noreferrer">Portfolio</a>
+      </div>
+    </header>
 
-  <div>
-    <table>
-      <thead>
-        <tr><td></td></tr>
-      </thead>
-      <tbody>
-        <tr><td></td></tr>
-      </tbody>
-    </table>
+    <section>
+      <h2>About</h2>
+      <div class="card">
+        <div>
+          7년 5개월 경력의 Java/Spring 기반 개발자로, 기업용 웹 솔루션 개발·운영과 Android 앱 개발을 함께 수행해 왔습니다.
+          damoISO R&D에서 DB 설계·신규 기능 개발·JavaScript 드로잉 라이브러리 구현에 참여했으며,
+          BLE/비콘 기반 위치 서비스 앱을 중심으로 프로젝트 개발·운영 경험을 보유하고 있습니다.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Core Strengths</h2>
+      <div class="card">
+        <span class="tag">운영/유지보수</span>
+        <span class="tag">장애 대응·재발 방지</span>
+        <span class="tag">로그·DB 기반 분석</span>
+        <span class="tag">데이터 정합성 개선</span>
+        <span class="tag">외부 API 연동/배치</span>
+        <span class="tag">BLE/비콘 서비스 운영</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="card">
+        <div><strong>다모넷</strong> · 솔루션사업팀 과장 <span class="meta">2021.10 ~ 2025.05</span></div>
+        <ul>
+          <li>국도화학, 원익IPS 등 약 10개 고객사 시스템을 동시에 운영하며 장애 이슈 대응 및 안정화 수행</li>
+          <li>반복 장애를 구조적으로 개선해 기본 패키지에 반영, 문서화를 통해 동일 유형 재발 빈도 감소</li>
+          <li>알림 메일 발송 로직 개선으로 발송 누락/오류 감소, 정합성 오류 구간 점검·보완</li>
+          <li>로그·DB 분석으로 원인 구간 식별 및 대응, 고객사 요구사항 반영~배포 단독 수행</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div><strong>브이아이소프트</strong> · 연구원 <span class="meta">2020.10 ~ 2021.09</span></div>
+        <ul>
+          <li>키오스크 앱 개발 및 운영: 결제 단말기·프린터·카메라 연동 로직 구현/안정화</li>
+          <li>프로토타이핑 기반 UI/UX 검증 반복으로 초기 운영 리스크 감소</li>
+          <li>운영 오류 발생 시 평균 1시간 이내 1차 대응, 모니터링 + 알림톡 API 연동</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div><strong>비코닉스</strong> · 전임연구원 <span class="meta">2017.10 ~ 2020.04</span></div>
+        <ul>
+          <li>BLE/비콘 기반 위치 서비스 앱 개발·운영(축제/행사/전시회 등 5건 이상)</li>
+          <li>관리자 페이지(통계·푸시) 개발 및 Parse Dashboard(MongoDB) 운영 업무 확장 수행</li>
+          <li>TourAPI 데이터를 내부 DB로 동기화하는 서버 앱 개발(Crontab, 일 1회 05:00)</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>Tech Stack</h2>
+      <div class="card grid">
+        <div>
+          <div class="meta"><strong>Backend</strong></div>
+          <div class="meta">Java · Spring Framework · MyBatis · JSP</div>
+        </div>
+        <div>
+          <div class="meta"><strong>DB</strong></div>
+          <div class="meta">Oracle · MSSQL · MariaDB(MySQL)</div>
+        </div>
+        <div>
+          <div class="meta"><strong>Server</strong></div>
+          <div class="meta">CentOS · Tomcat</div>
+        </div>
+        <div>
+          <div class="meta"><strong>Tools</strong></div>
+          <div class="meta">Git · SVN · Eclipse · Postman</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Certificates</h2>
+      <div class="card">
+        <div class="meta">SQLD (준비/취득 여부에 맞게 수정)</div>
+      </div>
+    </section>
   </div>
 
   
